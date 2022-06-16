@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.container {
+    height: 70%;
+    width: 25%;
+    padding: 2rem;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.title {
+    border: 1px solid red;
+    align-self: flex-start;
+}
+
+.display {
+    border: 1px solid red;
+    height: 15%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    word-break: break-all;
+    text-align: left;
+    font-size: 2.5rem;
+}
+
+.numpad {
+    border: 1px solid red;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.button {
+    border: 1px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.button:active {
+    background-color: rgb(146, 204, 255);
+}
+
+.equals {
+    grid-row: span 2;
+}
+
+.clear {
+    grid-column: 1 / 4;
+}
+
+.highlighted {
+    background-color: rgb(94, 180, 255);
+}
